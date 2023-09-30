@@ -2,26 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.navbar, .loginInfo{
+    box-shadow: 10px 12px 12px #cfc8c8, inset 12px 12px 25px #d6d3d3;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.admin-tabslist::-webkit-scrollbar, .navbar::-webkit-scrollbar, .main-body-area::-webkit-scrollbar{
+    width: 0px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.logOutico:hover{
+    background: #ff0000;
+    box-shadow: -4px 4px 10px #c26a6a, 
+    4px -4px 10px #22868d, 
+    -4px -4px 10px #7770b6, 
+    4px 4px 10px #b067b3, 
+    inset 12px 12px 25px #dfb0b0;
 }
