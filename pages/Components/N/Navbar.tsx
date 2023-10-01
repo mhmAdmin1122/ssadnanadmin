@@ -8,60 +8,60 @@ import { MdReportProblem, MdArticle, MdMovieFilter, MdSettingsInputComponent, Md
 
 const Navbar = () => {
     return (
-        <nav className='navbar relative w-[24%] border-r-2 border-[#ececec] pt-3 h-screen text-xl font-bold'>
+        <nav className='navbar relative w-[330px] border-r-2 border-[#ececec] pt-3 h-screen text-xl font-bold'>
 
-            <div className="flex items-center justify-center gap-2 px-12 border-b-2 border-gray-200 py-2 mb-10">
+            <div className="flex items-center justify-center gap-2 px-12 border-b-2 border-gray-200 py-2 mb-6">
                 <div className='w-160px'>
                     <ImageBox SRC={Logo} ALT="Logo" />
                 </div>
                 <h2 className='text-3xl font-bold cursor-context-menu'>Admin</h2>
             </div>
 
-            <div className="admin-tabslist grid justify-between items-center px-12 h-[430px] overflow-scroll py-3">
+            <div className="admin-tabslist grid justify-between items-center px-12 h-[445px] overflow-scroll py-3">
 
-                <div className="grid items-center gap-5">
+                <div className="navbar_tabs grid items-center gap-5">
 
-                    <Link href={"/"} className='flex flex-wrap items-center gap-3'>
+                    <Link href={"/OnPages/comments"} className='flex flex-wrap items-center gap-3'>
                         <b><FaComments /></b>
                         <h2>Comments</h2>
                     </Link>
 
-                    <Link href={"/"} className='flex flex-wrap items-center gap-3'>
+                    <Link href={"/OnPages/feedback"} className='flex flex-wrap items-center gap-3'>
                         <b><FaAngleDoubleRight /></b>
                         <h2>FeedBack</h2>
                     </Link>
 
-                    <Link href={"/"} className='flex flex-wrap items-center gap-3'>
+                    <Link href={"/OnPages/Problems"} className='flex flex-wrap items-center gap-3'>
                         <b><MdReportProblem /></b>
                         <h2>Problems</h2>
                     </Link>
 
-                    <Link href={"/"} className='flex flex-wrap items-center gap-3'>
+                    <Link href={"/OnPages/Article"} className='flex flex-wrap items-center gap-3'>
                         <b><MdArticle /></b>
                         <h2>Post Article</h2>
                     </Link>
 
-                    <Link href={"/"} className='flex flex-wrap items-center gap-3'>
+                    <Link href={"/OnPages/shop"} className='flex flex-wrap items-center gap-3'>
                         <b><FaShoppingCart /></b>
                         <h2>E-commerce</h2>
                     </Link>
 
-                    <Link href={"/"} className='flex flex-wrap items-center gap-3'>
+                    <Link href={"/OnPages/UserList"} className='flex flex-wrap items-center gap-3'>
                         <b><FaUsers /></b>
                         <h2>User List</h2>
                     </Link>
 
-                    <Link href={"/"} className='flex flex-wrap items-center gap-3'>
+                    <Link href={"/OnPages/AdminTheme"} className='flex flex-wrap items-center gap-3'>
                         <b><FaPencilRuler /></b>
                         <h2>Admin Theme</h2>
                     </Link>
 
-                    <Link href={"/"} className='flex flex-wrap items-center gap-3'>
+                    <Link href={"/OnPages/channels"} className='flex flex-wrap items-center gap-3'>
                         <b><MdMovieFilter /></b>
                         <h2>Channel Uploader</h2>
                     </Link>
 
-                    <Link href={"/"} className='flex flex-wrap items-center gap-3'>
+                    <Link href={"/OnPages/Setting"} className='flex flex-wrap items-center gap-3'>
                         <b><MdSettingsInputComponent /></b>
                         <h2>Setting</h2>
                     </Link>
